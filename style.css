@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(236, 236, 236);
+}
+header {
+  background-color: #02b875;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+.logo {
+  flex: 1;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+#create-ticket-btn {
+  margin-right: 15px;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 95%;
+  margin: auto;
+}
+
+.ticket-div {
+  min-height: 50px;
+  background-color: rgba(250, 250, 250, 0.8);
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ticket-div h3,
+p {
+  flex: 1;
+}
+.ticket-div p {
+  display: flex;
+  justify-content: center;
+}
+.status,
+.priority {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.small-icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.small-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #02b875;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* CONTACTS PAGE */
+
+#contact-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 40px;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .contact-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60px;
+  margin-top: 20px;
+  background-color: rgba(250, 250, 250, 0.8);
+} */
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  border-collapse: separate;
+  /* border-spacing: 15px; */
+}
+
+#table-head {
+  background-color: rgb(236, 236, 236);
+}
+
+tr {
+  display: table-row;
+}
+th {
+  font-size: 18px;
+}
+
+.contact-details {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 5px;
+  min-height: 60px;
+}
+
+td {
+  margin-top: 5px;
+  min-height: 60px;
+  justify-content: space-around;
+}
+
+.edit-btn {
+  background-color: #02b875;
+  padding: 5px 10px;
+}
+
+.delete-btn {
+  background-color: #02b875;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.small-icon-contact {
+  width: 40px;
+  height: 40px;
+  background-color: #02b875;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+#create-cont-btn {
+  margin-right: 15px;
+}
+
+/* Contact Modal */
+
+.modal .inactive {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 500px;
+  height: 500px;
+  padding: 30px;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 500px;
+  height: 530px;
+  padding: 40px 30px;
+  transition: right 0.3 ease-in;
+}
+.modal h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.modal p {
+  margin: 6px 0px;
+}
+.modal input {
+  margin: 10px 0px;
+  width: 300px;
+  padding: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+.close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#save-btn {
+  background-color: #02b875;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+select {
+  margin-right: 20px;
+  font-size: 14px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 8.5rem;
+  right: 5.5rem;
+  padding: 0.5rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshdesk clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Freshdesk</h2>
+      </div>
+      <div class="items">
+        <p>All Contacts</p>
+        <button id="create-cont-btn">Create Contact</button>
+        <button><a href="index.html">Tickets</a></button>
+      </div>
+    </header>
+    <main id="main">
+      <!-- <div id="contact-header">
+        <p>Contact</p>
+        <p>Title</p>
+        <p>Id</p>
+        <p>Email</p>
+        <p>Phone</p>
+      </div> -->
+      <table id="table">
+        <tr id="table-head">
+          <th>Thumbnail</th>
+          <th>Contact</th>
+          <th>Title</th>
+          <th>Id</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Edit</th>
+        </tr>
+      </table>
+    </main>
+    <div class="modal" id="modal">
+      <h3>New Contact</h3>
+      <button class="close-btn" id="close-btn">X</button>
+      <form>
+        <p>Full Name</p>
+        <input type="text" name="" id="contact-name" required />
+        <p>Title</p>
+        <input
+          type="text"
+          name=""
+          id="contact-title"
+          placeholder="not required"
+        />
+        <p>Email</p>
+        <input type="email" name="" id="contact-email" required />
+        <p>Phone</p>
+        <input type="number" id="contact-phone" />
+        <input type="hidden" id="hiden-input" />
+        <br />
+        <button id="save-btn">Save</button>
+        <button id="cancel-btn">Cancel</button>
+      </form>
+    </div>
+
+    <script src="contacts.js"></script>
+  </body>
+</html>

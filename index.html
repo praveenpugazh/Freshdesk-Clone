@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshdesk clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Freshdesk</h2>
+      </div>
+      <div class="items">
+        <p>All unresolved tickets</p>
+        <button id="create-ticket-btn">New Ticket</button>
+        <button id="contact-btn"><a href="contacts.html">Contacts</a></button>
+      </div>
+    </header>
+    <main id="main"></main>
+    <div class="modal" id="modal">
+      <h3>New Ticket</h3>
+      <button class="close-btn" id="close-btn">X</button>
+      <form>
+        <p>Select Contact</p>
+        <select name="" id="contact-name"></select>
+        <p>Subject</p>
+        <input type="text" name="" id="contact-title" />
+        <p>Status</p>
+        <input type="email" name="" id="contact-email" required />
+        <p>Priority</p>
+        <input type="number" id="contact-phone" />
+        <br />
+        <button id="save-btn">Save</button>
+        <button id="cancel-btn">Cancel</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
